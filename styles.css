@@ -111,20 +111,42 @@ li {
     transition: 0.3s ease-in-out;
 }
 
-/* Prevents visited links from turning purple */
+/* Default light mode link styles */
+#projects a {
+    text-decoration: none;
+    color: black; /* Visible in light mode */
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
 #projects a:visited {
+    color: black; /* Ensures visited links stay visible */
+}
+
+/* Glow effect in both modes */
+#projects a:hover {
+    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733;
+    color: #ff5733;
+}
+
+/* Ensure clicked links stay visible */
+#projects a:active {
+    color: #ff5733;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
     color: white;
 }
 
-/* Hover effect: Adds a glow */
-#projects a:hover {
-    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733; /* Glowing effect */
-    color: #ff5733; /* Changes text color on hover */
+/* Links in dark mode */
+body.dark-mode #projects a {
+    color: white;
 }
 
-/* Prevents active (clicked) links from changing color */
-#projects a:active {
-    color: #ff5733;
+body.dark-mode #projects a:visited {
+    color: white;
 }
 
 
