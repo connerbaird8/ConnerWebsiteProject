@@ -106,13 +106,27 @@ li {
 
 #projects a {
     text-decoration: none;  /* Removes underline */
+    color: white;           /* Sets default text color */
     font-weight: bold;      /* Makes text bold */
     transition: 0.3s ease-in-out;
 }
 
+/* Prevents visited links from turning purple */
+#projects a:visited {
+    color: white;
+}
+
+/* Hover effect: Adds a glow */
 #projects a:hover {
     text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733; /* Glowing effect */
+    color: #ff5733; /* Changes text color on hover */
 }
+
+/* Prevents active (clicked) links from changing color */
+#projects a:active {
+    color: #ff5733;
+}
+
 
 .instagram-icon {
     transition: transform 0.3s ease-in-out;
