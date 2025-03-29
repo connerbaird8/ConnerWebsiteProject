@@ -3,18 +3,15 @@ function toggleDarkMode() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const nameElement = document.getElementById("name");
-    const fullText = "Hi, My Name is ";
-    const nameText = '<span id="highlight">Conner</span>'; // Ensure Conner is inside span
+    const highlightElement = document.getElementById("highlight");
+    const nameText = "Conner";
     let index = 0;
 
     function typeEffect() {
-        if (index < fullText.length) {
-            nameElement.innerHTML = fullText.slice(0, index + 1) + '<span class="cursor">|</span>';
+        if (index < nameText.length) {
+            highlightElement.textContent += nameText[index];
             index++;
-            setTimeout(typeEffect, 100);
-        } else {
-            nameElement.innerHTML = fullText + nameText + '<span class="cursor">|</span>';
+            setTimeout(typeEffect, 150); // Adjust speed as needed
         }
     }
 
