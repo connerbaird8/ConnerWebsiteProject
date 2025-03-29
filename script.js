@@ -4,7 +4,7 @@ function toggleDarkMode() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const highlightElement = document.getElementById("highlight");
-    const nameText = "Conner";
+    const nameText = "Conner.";
     let index = 0;
 
     function typeEffect() {
