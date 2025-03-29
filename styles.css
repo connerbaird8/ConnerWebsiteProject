@@ -106,7 +106,7 @@ li {
 
 #projects a {
     text-decoration: none;  /* Removes underline */
-    color: white;           /* Sets default text color */
+    color: #ff5733;           /* Sets default text color */
     font-weight: bold;      /* Makes text bold */
     transition: 0.3s ease-in-out;
 }
