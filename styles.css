@@ -127,7 +127,7 @@ li {
 }
 
 #highlight {
-    color: rgb(0,150,255); /* Change to any color you like */
+    color: rgb(0,150,255); /* Change to your desired color */
     font-weight: bold;
 }
 
@@ -142,4 +142,5 @@ li {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
 
