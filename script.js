@@ -1,6 +1,20 @@
 function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle("dark-mode");
+
+    // Store the mode in local storage so it persists
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
 }
+
+// Apply the stored theme on page load
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const highlightElement = document.getElementById("highlight");
