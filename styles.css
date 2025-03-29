@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Glow effect on hover */
+.profile-pic:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px rgb(0,150,255);
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Shadow Glow Effect */
+button:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+    box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.6);
+}
+
+/* Ripple Animation */
+button::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    display: block;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.6s;
+}
+
+/* Ripple Effect on Click */
+button:active::after {
+    transform: scale(4);
+    opacity: 0;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #444;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+.fab {
+    color: #333;
+    font-size: 32px; /* Default size */
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.fab:hover {
+    color: #007bff;
+    transform: scale(1.3); /* Enlarges the icon on hover */
+}color: #007bff;
+
+/* Remove underline from project links */
+#projects a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+/* Glow effect on hover */
+#projects a:hover {
+    color: #0056b3;
+    text-shadow: 0px 0px 10px rgba(0, 123, 255, 0.7);
+}
