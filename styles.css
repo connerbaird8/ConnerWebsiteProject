@@ -175,4 +175,14 @@ body.dark-mode #projects a:visited {
     100% { opacity: 1; }
 }
 
+#links a {
+    color: white; /* Default icon color */
+    transition: 0.3s ease-in-out;
+}
+
+/* Glowing hover effect */
+#links a:hover {
+    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733;
+    color: #ff5733;
+}
 
