@@ -104,6 +104,24 @@ li {
     transform: scale(1.3); /* Enlarges the icon on hover */
 }color: #007bff;
 
+.fab {
+    color: #333;
+    font-size: 32px; /* Default size */
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.fab:hover {
+    color: #007bff;
+    transform: scale(1.3); /* Enlarges the icon on hover */
+}color: #007bff;
+
+#projects a {
+    text-decoration: none;  /* Removes underline */
+    color: #ff5733;           /* Sets default text color */
+    font-weight: bold;      /* Makes text bold */
+    transition: 0.3s ease-in-out;
+}
+
 #projects a {
     text-decoration: none;  /* Removes underline */
     color: #ff5733;           /* Sets default text color */
@@ -173,16 +191,5 @@ body.dark-mode #projects a:visited {
     0% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-#links a {
-    color: white; /* Default icon color */
-    transition: 0.3s ease-in-out;
-}
-
-/* Glowing hover effect */
-#links a:hover {
-    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733;
-    color: #ff5733;
 }
 
